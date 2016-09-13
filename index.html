@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-     <title>Open Bar</title>
+     <title>Lookalike App</title>
         <!--Boostrap's CSS-->
         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!--Custom CSS-->
@@ -13,10 +13,47 @@
 </head>
 
 <body>
-    <h1>Congratulations</h1>
-    <p> you have successfully set up your dev env </p>
+    <div class="container" id="page-container">  <!--container for whole page-->
+       
+         <div id ="top-header">
+        <h1 id="app-name">Lookalike</h1>
+        </div>  <!--end of Page Header Div-->
 
-<script src="./js/main.js"></script>
+        <div id ="top-message">
+        <h3 id ="page-header">See how similar you look to your parent, sibling or celebrity!</h3>
+        <p id ="instruct"> Upload a photo of you and someone else to see how similar you look</p>
+        </div>  <!--end of Top message Div-->
+
+        
+        <div id="photo_area">
+        <div class="btn-wrapper">
+                <label class="btn btn-info" for="my-file-selector1"> <!--First photo upload -->
+                    <input id="my-file-selector1" type="file">
+                    Upload a picture of you
+                </label>
+                
+            </div>
+
+
+
+
+            <div class="btn-wrapper">
+                <label class="btn btn-info" for="my-file-selector2"> <!-- Second photo upload --> 
+                    <input id="my-file-selector2" type="file">
+                    Upload a picture of someone else
+                </label>
+                
+            </div>
+
+            <div class ="btn-wrapper">
+                <button type="button" class="btn btn-default" id="analyse">Analyze!</button>
+                </div>
+            <div id ="results">Results will go here</div>
+        </div> <!-- end of photo area div>
+    </div>
+    <!--end of page-container div-->
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
